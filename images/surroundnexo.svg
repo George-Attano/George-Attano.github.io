@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 540" role="img" aria-labelledby="title desc">
+  <title id="title">SurroundNEXO preview</title>
+  <desc id="desc">Stylized surround-view autonomous driving geometry teaser.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef7f8"/>
+      <stop offset="0.55" stop-color="#f8fbfb"/>
+      <stop offset="1" stop-color="#f1ece4"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#2d3b43"/>
+      <stop offset="0.5" stop-color="#465761"/>
+      <stop offset="1" stop-color="#2d3b43"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#172632" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1120" height="540" rx="34" fill="url(#sky)"/>
+  <path d="M0 368 C240 300 365 302 560 354 C770 410 900 404 1120 346 L1120 540 L0 540 Z" fill="url(#road)"/>
+  <path d="M548 540 L574 540 L598 366 L526 366 Z" fill="#f6d98b" opacity="0.95"/>
+  <g fill="none" stroke="#91bdbe" stroke-width="4" opacity="0.72">
+    <path d="M560 270 C430 232 314 213 185 199"/>
+    <path d="M560 270 C686 232 806 213 935 199"/>
+    <path d="M560 270 C480 305 382 334 262 356"/>
+    <path d="M560 270 C640 305 738 334 858 356"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="433" y="206" width="254" height="112" rx="28" fill="#ffffff"/>
+    <path d="M476 271 L508 231 H617 L650 271 Z" fill="#6a9299"/>
+    <path d="M450 271 H670 L646 304 H474 Z" fill="#263b45"/>
+    <circle cx="493" cy="307" r="24" fill="#172632"/>
+    <circle cx="626" cy="307" r="24" fill="#172632"/>
+    <circle cx="493" cy="307" r="11" fill="#78979c"/>
+    <circle cx="626" cy="307" r="11" fill="#78979c"/>
+  </g>
+  <g fill="none" stroke-linecap="round">
+    <circle cx="560" cy="270" r="78" stroke="#c27b55" stroke-width="5" stroke-dasharray="9 14"/>
+    <circle cx="560" cy="270" r="132" stroke="#7aa6a8" stroke-width="4" stroke-dasharray="6 17" opacity="0.85"/>
+    <circle cx="560" cy="270" r="185" stroke="#9cb7bd" stroke-width="3" stroke-dasharray="5 18" opacity="0.75"/>
+  </g>
+  <g fill="#c27b55" opacity="0.9">
+    <circle cx="214" cy="199" r="8"/>
+    <circle cx="904" cy="199" r="8"/>
+    <circle cx="280" cy="354" r="7"/>
+    <circle cx="838" cy="354" r="7"/>
+  </g>
+  <g fill="#172632">
+    <text x="64" y="86" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="54" font-weight="800">SurroundNEXO</text>
+    <text x="66" y="128" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, sans-serif" font-size="25" font-weight="600" fill="#47616b">Ego-centric metric bridging for surround geometry</text>
+  </g>
+</svg>
