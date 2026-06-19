@@ -1,20 +1,26 @@
-header {
-    width: 100%;
-    height: 50px;
-    margin-top: 0px;
-    text-align: left;
-    background-color: #efffff;
-    position: fixed;
-    box-shadow: 20px 0px 20px grey;
-    clear: both;
+* {
+    box-sizing: border-box;
 }
 
 body {
     margin: auto;
     padding: 0;
-    background-color: #f0f8ff;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, Georgia, serif;
-    font-size:16.0px;
+    background: #eef4f7;
+    color: #24323d;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(238, 244, 247, 0.88)),
+        radial-gradient(circle at 18% 0%, rgba(90, 156, 167, 0.16), transparent 32%),
+        radial-gradient(circle at 95% 18%, rgba(219, 140, 96, 0.12), transparent 28%);
 }
 
 a img {
@@ -28,7 +34,7 @@ hr {
 }
 
 p {
-	margin: 0.4em 0em
+	margin: 0.45em 0em
   }
 
 p.news{
@@ -36,8 +42,7 @@ p.news{
 }
 
 div.content {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 0 54px;
     background-color: #fff;
     max-width: 1000px;
     vertical-align: middle;
@@ -45,10 +50,11 @@ div.content {
     margin-right: auto;
     clear: both;
     overflow: auto;
+    box-shadow: 0 18px 55px rgba(35, 50, 61, 0.06);
 }
 
 div.content_top {
-    padding-left: 20px;
+    padding-left: 24px;
     padding-right: 20px;
     background-color: #fff;
     max-width: 1000px;
@@ -61,18 +67,19 @@ div.content_top {
 
 .publication-table {
     width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 18px;
 }
 
 img.publication-image {
     width: 300px;
     height: 120px;
-    align: center;
 }
 
 td.image-column {
-    width: 300px;
-    height: 120px;
-	padding-left: 50px;
+    width: 318px;
+    padding: 18px 16px 18px 34px;
+    vertical-align: top;
 }
 
 td.image-column2 {
@@ -88,10 +95,11 @@ td.image-column-top {
 }
 
 td.description-column {
-    width: 700;
+    width: 700px;
     height: 100px;
     text-align: left;
     vertical-align: top;
+    padding: 17px 26px 17px 10px;
 }
 
 td.general-item-left {
@@ -132,7 +140,7 @@ div.img {
     margin-left: auto;
     margin-right: auto;
     max-width: 950px;
-    text-align: justify:
+    text-align: justify;
 }
 
 div.stress {
@@ -140,7 +148,8 @@ div.stress {
 }
 
 div.top_block {
-    padding-top: 50px;
+    padding-top: 54px;
+    border-radius: 0 0 10px 10px;
 }
 
 div.bottom_block {
@@ -148,9 +157,11 @@ div.bottom_block {
 }
 
 div.paper_title {
-    font-weight: 500;
-    font-size:16px;
-    padding-bottom: 0px;
+    font-weight: 650;
+    font-size: 17px;
+    line-height: 1.32;
+    padding-bottom: 5px;
+    color: #172632;
 }
 
 div.award {
@@ -160,15 +171,19 @@ div.award {
 }
 
 a.author {
-    font-size:14px;
+    font-size: 14.5px;
 }
 
 div.paper_venue {
-    font-size:14px;
+    font-size: 14px;
+    color: #6f4b32;
+    letter-spacing: 0.01em;
+    margin-top: 2px;
 }
 
 div.paper_materials{
-	font-size:14px;
+	font-size: 14px;
+    margin-top: 8px;
 
 }
 
@@ -179,16 +194,16 @@ div.talk_title {
 }
 
 a:link {
-    color: #0066ff;
+    color: #2567a8;
 	text-decoration: none;
 }
 
 a:visited {
-    color: #0066ff;
+    color: #2567a8;
 }
 
 a:hover {
-  color: #4c81c9;
+  color: #174b7c;
   text-decoration: underline;
 }
 
@@ -237,7 +252,164 @@ a sup{
 
 h3{
     font-size: 30px;
-    margin-bottom: 5px;
+    margin: 26px 0 5px;
+    color: #152431;
+    letter-spacing: 0;
+}
+
+.about-table {
+    padding-top: 18px;
+    padding-bottom: 10px;
+}
+
+.content_top h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 34px;
+    margin-top: 6px;
+}
+
+.image-column-top img {
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(36, 50, 61, 0.16);
+}
+
+.publication-table tr {
+    background: #fbfcfd;
+    box-shadow: inset 4px 0 0 #7aa6a8, 0 10px 28px rgba(35, 50, 61, 0.055);
+}
+
+.publication-table tr:hover {
+    background: #ffffff;
+    box-shadow: inset 4px 0 0 #c27b55, 0 14px 34px rgba(35, 50, 61, 0.09);
+}
+
+.publication-table td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.publication-table td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.image-column img {
+    width: 280px;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 7px;
+    border: 1px solid #d8e1e5;
+    display: block;
+    background: #eef4f7;
+}
+
+.paper_authors {
+    color: #4f5f68;
+    font-size: 14.5px;
+    line-height: 1.45;
+}
+
+.paper_authors a:link,
+.paper_authors a:visited {
+    color: #3d4b54;
+}
+
+.paper_authors a:hover {
+    color: #1f5f67;
+}
+
+.paper_authors a[href] {
+    border-bottom: 1px solid rgba(61, 75, 84, 0.24);
+}
+
+.paper_authors a[href]:hover {
+    border-bottom-color: rgba(31, 95, 103, 0.65);
+    text-decoration: none;
+}
+
+.paper_materials .link {
+    display: inline-block;
+    padding-right: 7px;
+    margin-bottom: 4px;
+}
+
+.paper_materials a:link,
+.paper_materials a:visited {
+    display: inline-block;
+    color: #1f5f67;
+    background: #edf6f4;
+    border: 1px solid #c9dfdc;
+    border-radius: 999px;
+    padding: 2px 10px;
+    font-weight: 600;
+}
+
+.paper_materials a:hover {
+    color: #ffffff;
+    background: #1f5f67;
+    border-color: #1f5f67;
+    text-decoration: none;
+}
+
+@media (max-width: 760px) {
+    div.content {
+        padding: 0 22px;
+    }
+
+    .about-table,
+    .about-table tbody,
+    .about-table tr,
+    .about-table td,
+    .publication-table,
+    .publication-table tbody,
+    .publication-table tr,
+    .publication-table td {
+        display: block;
+        width: 100%;
+    }
+
+    td.image-column-top,
+    td.image-column,
+    td.description-column {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    td.image-column-top {
+        text-align: center;
+        padding-bottom: 14px;
+    }
+
+    .image-column-top img {
+        width: min(220px, 78vw);
+        height: auto;
+    }
+
+    div.content_top {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content_top h3 {
+        font-size: 31px;
+        margin-bottom: 8px;
+    }
+
+    td.image-column {
+        padding: 16px 18px 8px;
+    }
+
+    td.description-column {
+        padding: 8px 18px 18px;
+    }
+
+    .publication-table td:first-child,
+    .publication-table td:last-child {
+        border-radius: 0;
+    }
+
+    .image-column img {
+        width: 100%;
+    }
 }
 div.demo-video {
     width: 300px;
